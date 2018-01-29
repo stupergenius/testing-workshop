@@ -75,8 +75,8 @@ function Timeline({users, posts = []}) {
 
 function Post({post: {title, content, tags}, author = {username: 'unknown'}}) {
   return (
-    <div>
-      <h2>{title}</h2>
+    <div className="post">
+      <h2 className="post-title">{title}</h2>
       <div>{content}</div>
       <div>{tags.map(t => <span key={t}>{t}</span>)}</div>
       <div>by {author.username}</div>
